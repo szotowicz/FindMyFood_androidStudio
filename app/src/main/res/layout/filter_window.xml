@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6a6565">
+
+    <TextView
+        android:id="@+id/SetFilterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/filterEditText"
+        android:layout_alignStart="@+id/filterEditText"
+        android:text="Ustaw filtr promocji:"
+        android:textColor="#FFF"/>
+
+    <EditText
+        android:id="@+id/filterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Wprowadź filtr"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/okFilterButton"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/filterEditText"
+        android:layout_below="@+id/filterEditText"
+        android:background="@android:color/holo_green_dark"
+        android:text="OK"
+        android:textSize="10sp"
+        android:onClick="setFilterOnClick" />
+
+    <Button
+        android:id="@+id/cancelFilterButton"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/filterEditText"
+        android:layout_below="@+id/filterEditText"
+        android:background="@android:color/holo_red_dark"
+        android:text="Anuluj"
+        android:textSize="10sp"
+        android:onClick="hideFilterWindowOnClick"/>
+</RelativeLayout>

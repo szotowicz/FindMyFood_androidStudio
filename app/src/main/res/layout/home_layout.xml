@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainNavigationActivity">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/map_max_size"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/showFilterBtn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/smallformat"
+        android:onClick="showFilterWindowOnClick" />
+
+    <Button
+        android:id="@+id/increaseSearchRadiusBtn"
+        android:layout_width="@dimen/zoom_button_size"
+        android:layout_height="@dimen/zoom_button_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/zoom_button_border"
+        android:text="+"
+        android:textSize="25sp"
+        android:onClick="increaseSearchRadiusOnClick" />
+
+    <Button
+        android:id="@+id/decreaseSearchRadiusBtn"
+        android:layout_width="@dimen/zoom_button_size"
+        android:layout_height="@dimen/zoom_button_size"
+        android:layout_below="@+id/increaseSearchRadiusBtn"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/zoom_button_border"
+        android:text="-"
+        android:textSize="25sp"
+        android:onClick="decreaseSearchRadiusOnClick" />
+
+    <Button
+        android:id="@+id/resizeMapViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/map"
+        android:background="#071"
+        android:onClick="resizeMapOnClick"
+        android:text="^"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/informationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resizeMapViewBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="" />
+
+    <ListView
+        android:id="@+id/promotionsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/informationTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="#BBBBBB" />
+
+</RelativeLayout>

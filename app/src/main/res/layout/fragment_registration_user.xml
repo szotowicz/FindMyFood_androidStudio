@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainNavigationActivity"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/informationDuringRegistrationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="#FF1111"
+        android:text="--inform--" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newLoginEditText"
+        android:layout_alignStart="@+id/newLoginEditText"
+        android:layout_alignLeft="@+id/newLoginEditText"
+        android:layout_marginBottom="-60dp"
+        android:text="Login:" />
+
+    <EditText
+        android:id="@+id/newLoginEditText"
+        android:layout_width="@dimen/elements_inRegistrationFragment_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Wprowadź login"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newEmailEditText"
+        android:layout_alignStart="@+id/newEmailEditText"
+        android:layout_alignLeft="@+id/newEmailEditText"
+        android:layout_marginBottom="-140dp"
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/newEmailEditText"
+        android:layout_width="@dimen/elements_inRegistrationFragment_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="Wprowadź email"
+        android:inputType="text"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newPasswordEditText"
+        android:layout_alignStart="@+id/newPasswordEditText"
+        android:layout_alignLeft="@+id/newPasswordEditText"
+        android:layout_marginBottom="-220dp"
+        android:text="Hasło:" />
+
+    <EditText
+        android:id="@+id/newPasswordEditText"
+        android:layout_width="@dimen/elements_inRegistrationFragment_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Wprowadź hasło"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newPasswordEditText"
+        android:layout_alignStart="@+id/newRepeatedPasswordEditText"
+        android:layout_alignLeft="@+id/newRepeatedPasswordEditText"
+        android:layout_marginBottom="-300dp"
+        android:text="Powtórz hasło:" />
+
+    <EditText
+        android:id="@+id/newRepeatedPasswordEditText"
+        android:layout_width="@dimen/elements_inRegistrationFragment_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:hint="Wprowadź hasło"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/createUserAccountButton"
+        android:layout_width="@dimen/elements_inRegistrationFragment_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newRepeatedPasswordEditText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button_border"
+        android:text="Utwórz konto"
+        android:onClick="createNewUserAccountOnClick" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Find My Food</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Find My Food</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="filter_file_name">myfilterfile</string>
+    <string name="favorite_filter_file_name">myfavoritefilterfile</string>
+    <string name="config_file_name">myconfigfile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

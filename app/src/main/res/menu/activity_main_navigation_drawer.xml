@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_menu_search_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_rate_restaurants"
+            android:icon="@mipmap/ic_menu_rate_24dp"
+            android:title="Oceń restauracje" />
+        <item
+            android:id="@+id/nav_account_settings"
+            android:icon="@mipmap/ic_menu_settings_24dp"
+            android:title="Ustawienia konta" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@mipmap/ic_menu_login_24dp"
+            android:title="Zaloguj" />
+    </group>
+
+</menu>
